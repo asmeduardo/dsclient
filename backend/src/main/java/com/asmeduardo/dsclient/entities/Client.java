@@ -25,14 +25,13 @@ public class Client implements Serializable {
 
 	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
 	private Instant birthDate;
-	
+
 	private Integer children;
 
 	public Client() {
 	}
 
 	public Client(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
